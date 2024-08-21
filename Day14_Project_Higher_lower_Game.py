@@ -1,6 +1,6 @@
 import random
-from Day13_Project_Higher_lower_data import data
-from Day13_Project_Higher_lower_logo import logo, vs
+from Day14_Project_Higher_lower_data import data
+from Day14_Project_Higher_lower_logo import logo, vs
 
 def format_data(account):
     """Takes the account data and returns data into printable format."""
@@ -53,7 +53,7 @@ while game_continue:
     ## Get the follower count of each account
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_a["follower_count"]
-    is_correct = check_answer(guess, a_follower_count, b_follower_count)
+    is_correct = check_answer(guess, a_followers=a_follower_count, b_followers=b_follower_count)
 
     # Check if user is correct
     ## Use if statement to check if the user is correct.
